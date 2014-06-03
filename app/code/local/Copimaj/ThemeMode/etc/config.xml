@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config> 
+    <modules>
+        <Copimaj_ThemeMode>
+            <version>0.2</version>
+        </Copimaj_ThemeMode>
+    </modules>
+    <global>
+		<helpers>
+			<thememode>
+                <class>Copimaj_ThemeMode_Helper</class>
+            </thememode>
+		</helpers>
+	</global>
+    <frontend>
+        <routers>
+            <thememode>
+                <use>standard</use>
+                <args>
+                    <module>Copimaj_ThemeMode</module>
+                    <frontName>thememode</frontName>
+                </args>
+            </thememode>
+        </routers>   
+    </frontend>
+</config>
